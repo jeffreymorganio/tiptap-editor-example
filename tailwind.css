@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ProseMirror-focused {
+  @apply outline-none;
+}
+
+.ProseMirror h1 {
+  @apply text-3xl mb-3;
+}
+
+.ProseMirror h2 {
+  @apply text-2xl mb-2;
+}
+
+.ProseMirror h3 {
+  @apply text-xl mb-1;
+}
+
+.ProseMirror ul {
+  @apply list-outside list-disc pl-6;
+}
+
+.ProseMirror ol {
+  @apply list-outside list-decimal pl-6;
+}

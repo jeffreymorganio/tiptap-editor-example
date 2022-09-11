@@ -1,0 +1,30 @@
+{
+  "name": "tiptap-editor-example",
+  "version": "1.0.0",
+  "description": "Use the TipTap editor with vanilla JavaScript and TailwindCSS.",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server --watch=index.html,builds/*.js,builds/styles.css",
+    "build:js": "esbuild js/*.js --bundle --sourcemap --outdir=builds --watch",
+    "build:css": "tailwindcss -i ./tailwind.css -o ./builds/styles.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffreymorganio/tiptap-editor-example.git"
+  },
+  "author": "Jeffrey Morgan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeffreymorganio/tiptap-editor-example/issues"
+  },
+  "homepage": "https://github.com/jeffreymorganio/tiptap-editor-example#readme",
+  "dependencies": {
+    "@tiptap/core": "^2.0.0-beta.182",
+    "@tiptap/starter-kit": "^2.0.0-beta.191",
+    "esbuild": "^0.15.7"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
