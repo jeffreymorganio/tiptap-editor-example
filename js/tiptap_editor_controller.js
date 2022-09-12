@@ -16,6 +16,9 @@ export default class TipTapEditorController {
       extensions: [
         StarterKit,
       ],
+      // A transaction occurs every time something about the editor changes, including
+      // moving the caret. Here we update the on/off state of the buttons based on
+      // the text under the caret.
       onTransaction: () => this.updateButtons(),
       content: `<p>${initialText}</p>`,
     })
@@ -39,6 +42,10 @@ export default class TipTapEditorController {
     buttonElements.forEach(buttonElement => {
       this.buttonElements[dataAttribute] = buttonElement
       buttonElement.addEventListener("click", event => {
+        // TipTap commands can be chained into one-liners For example, the chain
+        // `editor.chain().focus().toggleBold().run()` toggles the bold style.
+        // Here we delegate the third call in the chain (that actually changes
+        // the style) to the command callback parameter:
         command(this.editor.chain().focus()).run()
         this.updateButtons()
       })
