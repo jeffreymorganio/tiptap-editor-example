@@ -1,6 +1,6 @@
 # TipTap Editor with Vanilla JavaScript and Tailwind CSS
 
-This repository contains an example of how to use the [TipTap](https://tiptap.dev/) editor with vanilla JavaScript and [Tailwind CSS](https://tailwindcss.com/) as an alternative to the React, Vue and Svelt examples provided by the TipTap documentation.
+This repository contains an example of how to use the [TipTap](https://tiptap.dev/) editor with vanilla JavaScript and [Tailwind CSS](https://tailwindcss.com/) as an alternative to the React, Vue and Svelt examples provided by the TipTap documentation. SVG icons by [Bootstrap](https://icons.getbootstrap.com/).
 
 ## Running
 
