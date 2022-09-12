@@ -17356,7 +17356,7 @@ img.ProseMirror-separator {
         return chain.redo();
       });
     }
-    addButtonListener(dataAttribute, command2, isToggleable = false) {
+    addButtonListener(dataAttribute, command2) {
       const buttonElements = this.textEditorElement.querySelectorAll(`[data-${dataAttribute}]`);
       buttonElements.forEach((buttonElement) => {
         this.buttonElements[dataAttribute] = buttonElement;

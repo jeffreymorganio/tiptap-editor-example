@@ -37,7 +37,7 @@ export default class TipTapEditorController {
     this.addButtonListener("redo",        chain => { return chain.redo() })
   }
 
-  addButtonListener(dataAttribute, command, isToggleable=false) {
+  addButtonListener(dataAttribute, command) {
     const buttonElements = this.textEditorElement.querySelectorAll(`[data-${dataAttribute}]`)
     buttonElements.forEach(buttonElement => {
       this.buttonElements[dataAttribute] = buttonElement
